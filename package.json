@@ -14,14 +14,14 @@
   "dependencies": {
     "is-my-json-valid": "^2.12.1",
     "js-yaml": "^3.3.1",
-    "lodash": "^3.10.0",
+    "lodash": "^4.17.4",
     "minimist": "^1.1.2"
   },
   "devDependencies": {
-    "chai": "3.4.1",
-    "jscs": "^1.10.0",
+    "chai": "3.5.0",
+    "jscs": "^3.0.7",
     "jshint": "^2.6.0",
-    "mocha": "2.4.2"
+    "mocha": "3.2.0"
   },
   "scripts": {
     "hint": "jshint *.js && jscs *.js",
