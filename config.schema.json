@@ -134,13 +134,17 @@
       "additionalProperties": false,
       "required": [
         "host",
-        "port"
+        "port",
+        "pagesize"
       ],
       "properties": {
         "host": {
           "type": "string"
         },
         "port": {
+          "type": "integer"
+        },
+        "pagesize": {
           "type": "integer"
         }
       }
