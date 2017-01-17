@@ -146,6 +146,12 @@
         },
         "pagesize": {
           "type": "integer"
+        },
+        "number_of_shards": {
+          "type": "integer"
+        },
+        "number_of_replicas": {
+          "type": "integer"
         }
       }
     },
