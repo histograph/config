@@ -152,6 +152,9 @@
         },
         "number_of_replicas": {
           "type": "integer"
+        },
+        "requestTimeoutMs": {
+          "type": "integer"
         }
       }
     },
