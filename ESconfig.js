@@ -12,6 +12,10 @@ var getESconf = function(){
     defaultMapping.settings.number_of_replicas = config.elasticsearch.number_of_replicas;
   }
 
+  if (config.elasticsearch.precision != null){
+    defaultMapping.mappings._default_.properties.geometry.precision = config.elasticsearch.precision;
+  }
+
  return defaultMapping;
 
 }

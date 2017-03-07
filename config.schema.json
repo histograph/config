@@ -135,7 +135,8 @@
       "required": [
         "host",
         "port",
-        "pagesize"
+        "pagesize",
+        "precision"
       ],
       "properties": {
         "host": {
@@ -155,6 +156,9 @@
         },
         "requestTimeoutMs": {
           "type": "integer"
+        },
+        "precision": {
+          "type": "string"
         }
       }
     },
