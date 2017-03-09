@@ -46,7 +46,7 @@
           "index": false
         },
         "dataset": {
-          "type": "keyword",
+          "type": "keyword"
         },
         "validSince": {
           "format": "date_optional_time",
