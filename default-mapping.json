@@ -1,12 +1,12 @@
 {
   "settings": {
-    "number_of_shards": 2,
+    "number_of_shards": 1,
     "number_of_replicas": 0,
     "analysis": {
       "analyzer": {
         "lowercase": {
           "type": "custom",
-          "filter": " lowercase",
+          "filter": "lowercase",
           "tokenizer":  "keyword"
         }
       }
@@ -14,43 +14,39 @@
   },
   "mappings": {
     "_default_": {
+      "_all": {
+        "enabled": false
+      },
       "properties": {
         "geometry": {
-          "precision": "1m",
+          "precision": "10m",
           "tree": "quadtree",
           "type": "geo_shape"
         },
         "uri": {
-          "type": "keyword",
-          "index": true
+          "type": "keyword"
         },
         "id": {
-          "store": true,
-          "type": "keyword",
-          "index": true
+          "type": "keyword"
         },
         "type": {
-          "type": "keyword",
-          "index": true
+          "type": "keyword"
         },
         "name": {
           "fields": {
             "analyzed": {
-              "store": true,
-              "type": "text",
-              "index": true
+              "type": "text"
             },
             "exact": {
               "analyzer": "lowercase",
-              "store": true,
               "type": "text"
             }
           },
-          "type": "text"
+          "type": "text",
+          "index": false
         },
         "dataset": {
           "type": "keyword",
-          "index": true
         },
         "validSince": {
           "format": "date_optional_time",
