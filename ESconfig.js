@@ -1,6 +1,6 @@
-var config=require("./index.js");
+const config=require("./index.js");
 
-var defaultMapping = require('./default-mapping.json');
+const defaultMapping = require('./default-mapping.json');
 
 var getESconf = function(){
 

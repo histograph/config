@@ -76,6 +76,9 @@
               "type": "string"
             }
           }
+        },
+        "logLevel": {
+          "type": "string"
         }
       },
       "additionalProperties": false,
@@ -86,7 +89,8 @@
         "dataDir",
         "admin",
         "defaultPathRelation",
-        "hairRelations"
+        "hairRelations",
+        "logLevel"
       ]
     },
     "stats": {
@@ -200,12 +204,16 @@
         },
         "batchTimeout": {
           "type": "integer"
+        },
+        "logLevel": {
+          "type": "string"
         }
       },
       "additionalProperties": false,
       "required": [
         "batchSize",
-        "batchTimeout"
+        "batchTimeout",
+        "logLevel"
       ]
     },
     "viewer": {
@@ -332,6 +340,30 @@
         }
       },
       "additionalProperties": false
+    },
+    "graphmalizer": {
+      "type": "object",
+      "properties": {
+        "logLevel": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "logLevel"
+      ]
+    },
+    "io": {
+      "type": "object",
+      "properties": {
+        "logLevel": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "logLevel"
+      ]
     },
     "logo": {
       "type": "array",
