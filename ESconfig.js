@@ -15,6 +15,10 @@ var getESconf = function(){
   if (config.elasticsearch.precision != null){
     defaultMapping.mappings._default_.properties.geometry.precision = config.elasticsearch.precision;
   }
+  
+  if (config.elasticsearch.refresh_interval != null){
+    defaultMapping.settings.refresh_interval = config.elasticsearch.refresh_interval;
+  }
 
  return defaultMapping;
 

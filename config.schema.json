@@ -163,6 +163,9 @@
         },
         "precision": {
           "type": "string"
+        },
+        "refresh_interval": {
+          "type": "string"
         }
       }
     },
