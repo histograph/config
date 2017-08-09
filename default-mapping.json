@@ -20,9 +20,10 @@
       },
       "properties": {
         "geometry": {
-          "precision": "10m",
+          "precision": "1m",
           "tree": "quadtree",
-          "type": "geo_shape"
+          "type": "geo_shape",
+          "distance_error_pct": 0.0001
         },
         "uri": {
           "type": "keyword"

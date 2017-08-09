@@ -16,6 +16,10 @@ var getESconf = function(){
     defaultMapping.mappings._default_.properties.geometry.precision = config.elasticsearch.precision;
   }
   
+  if (config.elasticsearch.distance_error_pct != null){
+    defaultMapping.mappings._default_.properties.geometry.distance_error_pct = config.elasticsearch.distance_error_pct;
+  }
+  
   if (config.elasticsearch.refresh_interval != null){
     defaultMapping.settings.refresh_interval = config.elasticsearch.refresh_interval;
   }

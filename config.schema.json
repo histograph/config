@@ -140,7 +140,8 @@
         "host",
         "port",
         "pagesize",
-        "precision"
+        "precision",
+        "distance_error_pct"
       ],
       "properties": {
         "host": {
@@ -163,6 +164,9 @@
         },
         "precision": {
           "type": "string"
+        },
+        "distance_error_pct": {
+          "type": "number"
         },
         "refresh_interval": {
           "type": "string"
