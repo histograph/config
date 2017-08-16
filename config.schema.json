@@ -263,6 +263,9 @@
     "data": {
       "type": "object",
       "properties": {
+        "logLevel": {
+          "type": "string"
+        },
         "geonames": {
           "type": "object",
           "properties": {
@@ -318,6 +321,9 @@
     "import": {
       "type": "object",
       "properties": {
+        "logLevel": {
+          "type": "string"
+        },
         "dirs": {
           "type": ["array", "null"],
           "items": {
